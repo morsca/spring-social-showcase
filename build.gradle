@@ -73,3 +73,7 @@ repositories {
 task wrapper(type: Wrapper) {
     gradleVersion = '1.11'
 }
+
+task stage {
+  dependsOn clean, build
+}
